@@ -16,7 +16,7 @@ module "app-load-balancer" {
     source = "../Modules/app-load-balancer"
 }
 
-module "cloud-watch " {
+module "cloud-watch" {
     source = "../Modules/cloud-watch"
 }
 
