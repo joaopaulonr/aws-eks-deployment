@@ -6,7 +6,8 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "aws-eks-deplyment-joaopaulonr"
+    bucket = "aws-eks-deployment-joaopaulonr"
+    key = "terraform.tfstate"
     region = "us-east-1"
   }
 }
