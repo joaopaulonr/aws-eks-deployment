@@ -37,7 +37,7 @@ variable "engine_version" {
 
 variable "instance_class" {
   type    = string
-  default = "db.t3.micro"
+  default = "db.t3.small"
 }
 
 variable "username" {
@@ -57,5 +57,15 @@ variable "port" {
 
 variable "identifier" {
   type    = string
-  default = "adefinir"
+  default = "database"
+}
+
+variable "identifier_replica" {
+  type    = string
+  default = "database-replica"
+}
+
+variable "retention_period" {
+  type    = number
+  default = 7
 }
